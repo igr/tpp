@@ -1,0 +1,44 @@
+diff --git a/ql/pom.xml b/ql/pom.xml
+index db53950d..63c8df66 100644
+--- a/ql/pom.xml
++++ b/ql/pom.xml
+@@ -23,7 +23,7 @@
+     <relativePath>../pom.xml</relativePath>
+   </parent>
+ 
+-  <artifactId>hive-exec</artifactId>
++  <artifactId>hive-exec-fsq</artifactId>
+   <packaging>jar</packaging>
+   <name>Hive Query Language</name>
+ 
+@@ -907,7 +907,7 @@
+           </execution>
+         </executions>
+       </plugin>
+-      <plugin>
++      <!--plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-shade-plugin</artifactId>
+         <executions>
+@@ -918,10 +918,10 @@
+               <goal>shade</goal>
+             </goals>
+             <configuration>
+-                <!--also see maven-jar-plugin execution.id=core-jar-->
++                also see maven-jar-plugin execution.id=core-jar
+               <artifactSet>
+                 <includes>
+-                  <!-- order is meant to be the same as the ant build -->
++                  order is meant to be the same as the ant build
+                   <include>org.apache.hive:hive-common</include>
+                   <include>org.apache.hive:hive-exec</include>
+                   <include>org.apache.hive:hive-serde</include>
+@@ -974,7 +974,7 @@
+             </configuration>
+           </execution>
+         </executions>
+-      </plugin>
++      </plugin-->
+       <plugin>
+         <groupId>org.codehaus.mojo</groupId>
+         <artifactId>build-helper-maven-plugin</artifactId>

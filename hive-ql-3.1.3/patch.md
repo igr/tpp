@@ -1,0 +1,1 @@
+# Patch for Hive QL v3.1.3
